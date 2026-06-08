@@ -1,0 +1,16 @@
+!r2scan0 def2-QZVPPD RIJCOSX def2/J VeryTightSCF DEFGRID3 
+
+%basis
+  PCDTrimAuxJ Coulomb
+  PCDTrimAuxC Coulomb
+  PCDThresh -1
+end
+
+%maxcore 12000
+
+%pal
+  nprocs 14
+end
+
+*xyzfile 0 1 geom.xyz
+
