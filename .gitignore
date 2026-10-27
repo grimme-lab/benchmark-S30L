@@ -219,7 +219,17 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-#######################################
+###############################################################################
+###############################################################################
+###############################################################################
+
+# general
+*.err
+*.inp
+*.in
+*.log
+*.out
+*.sh
 
 # turbomole
 alpha
@@ -230,26 +240,31 @@ control
 energy
 gradient
 mos
-
-# turbomole
-ridft.err
-ridft.out
-ridft.sh
+tmp.input
 
 # orca
-orca.err
-orca.gbw
-orca.inp
-orca.out
+*.densities
+*.densitiesinfo
+*.engrad
+*.gbw
+*.property.txt
+
+# dispersion
+.D3BJ*
+.D4
+.D5
+.EDISP
 
 # other
 .RMSD
+*.lock*
 
-# slurm
-slurm*.out
-job*.sh
-.submit.lock*
+# copied files in method dirs
+*/*/*/*/coord
+*/*/*/*/*.xyz
+*/*/*/*/.CHRG
+*/*/*/*/.SYM
+*/*/*/*/.UHF
 
-# copied geometries in method dirs
-*/*/*/coord
-*/*/*/*.xyz
+# papers
+paper/
